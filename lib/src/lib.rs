@@ -23,7 +23,7 @@ pub struct Settings {
     pub conversion: ConversionConfig,
     pub machine: MachineConfig,
     pub postprocess: PostprocessConfig,
-    #[cfg_attr(feature = "serde", serde(default = "Version::unknown"))]
+    //#[cfg_attr(feature = "serde", serde(default = "Version::unknown"))]
     pub version: Version,
 }
 
@@ -62,7 +62,7 @@ pub enum Version {
     V0,
     /// M2 is no longer appended to the program by default
     V5,
-    #[cfg_attr(feature = "serde", serde(untagged))]
+    //#[cfg_attr(feature = "serde", serde(untagged))]
     Unknown(String),
 }
 
