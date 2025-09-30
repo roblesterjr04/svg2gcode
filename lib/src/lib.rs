@@ -17,7 +17,7 @@ pub use postprocess::PostprocessConfig;
 pub use turtle::Turtle;
 
 /// A cross-platform type used to store all configuration types.
-#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+/// #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[derive(Debug, Default, Clone, PartialEq)]
 pub struct Settings {
     pub conversion: ConversionConfig,
