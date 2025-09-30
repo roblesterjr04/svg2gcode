@@ -55,7 +55,7 @@ impl Settings {
 /// Used to control breaking change behavior for [`Settings`].
 ///
 /// There were already 3 non-breaking version bumps (V1 -> V4) so versioning starts off with [`Version::V5`].
-#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+/// #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub enum Version {
     /// Implicitly versioned settings from before this type was introduced.
